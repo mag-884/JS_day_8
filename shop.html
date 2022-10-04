@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - JS</title>
+    <link rel="icon" href="#">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/styles.css" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light mynav rounded-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> 
+                <img src="https://www.florca.com/images/content/11/8da8c359f3e6bd0/1920x300/2/Headerbeeld1.png"
+                    alt="" height="300px" width="1490px" class="d-inline-block align-top">
+            </a>
+           
+        </div>
+    </nav>
+    <!-- here ends navbar -->
+    <!-- products container -->
+    <div class="container">
+        <h2 class="text-center rounded py-3 hero-title text-white fw-bold mb-0">Soul</h2>
+        <div
+            class="products row g-0 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-around">
+            <!-- <div class="card product col my-4" style="width: 300px;">
+                <img class="card-img-top mt-2 px-3" src="images/fl.jpg" alt="product1">
+                <div class="card-body px-3 py-0">
+                    <h5 class="card-title">I can make your day better</h5>
+                    <p class="card-text"></p>
+                    <p class="card-text h3 text-end">€ 350,00</p>
+                    <p class="card-text3 d-flex justify-content-end"><button class="btn w-75 product-button"><i
+                                class="fs-4 bi bi-cart-plus"></i> Add </button></p>
+
+                </div>
+        </div> -->
+    </div>
+
+    <!--cart starts here  -->
+    <div class="cart mb-3">
+        <h2 class="text-center bg-dark text-white p-3 fw-bold rounded mb-0">Shopping <i
+            class="fs-4 bi bi-cart-plus counter"></i> </button></p>
+</h2>
+        <div class="cart-items">
+            <!-- cart row / this is only a place holder-->
+            <div class="cart-row row gx-0">
+                <div class="cart-item col-6 ps-md-5 my-2 d-flex align-items-center justify-content-start">
+                    <img class="cart-item-image" src="images/fl2.webp"  alt="">
+                    <br>
+                    <div class="cart-item-title h5 ms-2"></div>
+                </div>
+                <div class="cart-qtty-action col-2 d-flex justify-content-center align-items-center">
+                    <div class="d-flex">
+                        <i class="plus fs-5 bi bi-plus-circle-fill"></i>
+                    </div>
+                    <div class="text-center m-0 cart-quantity h4 w-25">1</div>
+                    <div class="d-flex">
+                        <i class="minus fs-5 bi bi-dash-circle-fill"></i>
+                    </div>
+                </div>
+                <div class="col-1 d-flex justify-content-start align-items-center">
+                    <i class="del fs-4 bi bi-trash3-fill text-danger"></i>
+                </div>
+                <div class="cart-price col-3 h5 my-auto text-end p-2 pe-sm-5">€&nbsp;120,00</div>
+            </div>
+        </div>
+        <!-- place holder ends here -->
+
+        <!-- end cart row -->
+        <div id="total" class="cart-total me-0 pb-2 text-center text-sm-end fw-bold">
+            <p class="cart-total-title m-0">Total <span id="price" class="cart-total-price h4 p-0 pe-sm-5 m-0 fw-bold">€
+                    0.00</span></p>
+                    <p>Discount <span class="discount"> € 0.00</span></p>
+
+        </div>
+        <div class="d-flex justify-content-center">
+            <button id="btn-purchase" class="btn btn-purchase text-white" type="button">Check out <br><i
+                    class="bi bi-cart-check-fill"></i></button>
+        </div>
+    </div>
+    <footer class="d-sm-flex justify-content-center align-items-center text-white rounded ">
+        <div class="fs-4 text-center text-sm-end p-2">Copyright &copy; <a
+                href="#">Soul</a>
+        </div>
+        <div class="fs-4 text-center text-sm-start p-2">
+            All rights reserved 2022
+        </div>
+    </footer>
+
+    <script src="script/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    </script>
+</body>
+
+</html>
